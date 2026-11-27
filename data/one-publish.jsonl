@@ -1,0 +1,10 @@
+{"seq":1,"observed":0,"kind":"quote","payload":{"id":"q1","tenant":"t1","account":"A","currency":"T","cap":800,"until":10}}
+{"seq":2,"observed":0,"kind":"quote","payload":{"id":"q2","tenant":"t2","account":"B","currency":"T","cap":600,"until":10}}
+{"seq":3,"observed":1,"kind":"tx","payload":{"id":"x","sequence":1,"quote":"q1"}}
+{"seq":4,"observed":1,"kind":"tx","payload":{"id":"y","sequence":2,"quote":"q2"}}
+{"seq":5,"observed":2,"kind":"batch","payload":{"id":"b1","segments":[["x",51],["y",49]],"overhead":17}}
+{"seq":6,"observed":3,"kind":"attempt","payload":{"id":"tx1","batches":["b1"]}}
+{"seq":7,"observed":4,"kind":"gas","payload":{"attempt":"tx1","block":"h1","amount":271}}
+{"seq":8,"observed":4,"kind":"chain","payload":{"block":"h1","canonical":true}}
+{"seq":9,"observed":5,"kind":"accept","payload":{"batch":"b1","attempt":"tx1","available":true}}
+{"seq":10,"observed":6,"kind":"bill","payload":{"id":"B1","account":"A","txs":["x"]}}

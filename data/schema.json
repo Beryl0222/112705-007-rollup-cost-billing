@@ -1,0 +1,48 @@
+{
+  "quote": {
+    "id": "s",
+    "tenant": "s",
+    "account": "s",
+    "currency": "s",
+    "cap": "i",
+    "until": "i"
+  },
+  "tx": {
+    "id": "s",
+    "sequence": "i",
+    "quote": "s"
+  },
+  "batch": {
+    "id": "s",
+    "segments": "a",
+    "overhead": "i"
+  },
+  "attempt": {
+    "id": "s",
+    "batches": "a"
+  },
+  "gas": {
+    "attempt": "s",
+    "block": "s",
+    "amount": "i"
+  },
+  "chain": {
+    "block": "s",
+    "canonical": "b"
+  },
+  "accept": {
+    "batch": "s",
+    "attempt": "s",
+    "available": "b"
+  },
+  "bill": {
+    "id": "s",
+    "account": "s",
+    "txs": "a"
+  },
+  "paid": {
+    "id": "s",
+    "bill": "s",
+    "amount": "i"
+  }
+}
